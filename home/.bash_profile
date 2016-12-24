@@ -23,4 +23,8 @@ mkcd () {
   cd "$1"
 }
 
+keychain ~/.ssh/id_rsa
+. ~/.keychain/$HOSTNAME-sh
+#. ~/.keychain/$HOSTNAME-sh-gpg
+
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec ssh-agent startx
