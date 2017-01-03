@@ -174,6 +174,10 @@ mplayer -loop 10 /usr/lib/libreoffice/share/gallery/sounds/gong.wav
 EOF
 }
 
+hclone() {
+		$HOME/.homesick/repos/homeshick/bin/homeshick clone mcgruderlaw/$1
+}
+
 xcompmgr_restart() {
   killall xcompmgr
   sleep 1
