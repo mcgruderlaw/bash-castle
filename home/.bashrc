@@ -178,6 +178,10 @@ hclone() {
 		$HOME/.homesick/repos/homeshick/bin/homeshick clone mcgruderlaw/$1
 }
 
+bclone() {
+		git clone git@bitbucket.org:sololittle/$1
+}
+
 xcompmgr_restart() {
   killall xcompmgr
   sleep 1
