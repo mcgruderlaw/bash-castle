@@ -12,6 +12,7 @@ export EDITOR="vim"
 export MANWIDTH=74
 export BROWSER="firefox"
 export BROWSERCLI="w3m"
+export PLAYER="mplayer"
 export HISTIGNORE="clear:history"
 export HISTCONTROL="ignoredups"
 # export PAGER=/usr/local/bin/vimpager
