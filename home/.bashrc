@@ -9,10 +9,11 @@
 #if [[ \$TMUX ]]; then source ~/.tmux-git/tmux-git.sh; fi
 
 export EDITOR="vim"
-export MANWIDTH=74
+export MANWIDTH=80
 export BROWSER="firefox"
 export BROWSERCLI="w3m"
-export PLAYER="mplayer"
+export PLAYER="mpv"
+export IMAGEVIEWER="feh"
 export HISTIGNORE="clear:history"
 export HISTCONTROL="ignoredups"
 # export PAGER=/usr/local/bin/vimpager
