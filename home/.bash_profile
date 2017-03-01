@@ -8,7 +8,7 @@
 PATH=$PATH:/usr/sbin:~/.cabal:~/.cabal/bin:~/.vim:~/.w3m:~/bin:~/local:~/local/bin
 
 export PATH
-export PATH="${PATH}:$HOME/scripts"
+export PATH="${PATH}:$HOME/Documents/scripts"
 export LANG=en_US.UTF-8
 #export TERM=xterm-256color
 export TERM=xterm-256color
