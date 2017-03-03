@@ -8,6 +8,7 @@
 
 #if [[ \$TMUX ]]; then source ~/.tmux-git/tmux-git.sh; fi
 
+#export IFS=$' \t\n'
 export EDITOR="vim"
 export MANWIDTH=80
 export BROWSER="firefox"
