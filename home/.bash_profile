@@ -14,6 +14,8 @@ export LANG=en_US.UTF-8
 export TERM=xterm-256color
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket" 
 export CASES="$HOME/Documents/ofc/Cases/"
+export NOTES="$HOME/Documents/notes/"
+export SCRIPTS="$HOME/Documents/scripts/"
 
 unset PROMPT_COMMAND
 
