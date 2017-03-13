@@ -8,12 +8,13 @@
 PATH=$PATH:/usr/sbin:~/.cabal:~/.cabal/bin:~/.vim:~/.w3m:~/bin:~/local:~/local/bin
 
 export PATH
-export PATH="${PATH}:$HOME/Documents/scripts"
+export PATH="${PATH}:$HOME/.bin"
 export LANG=en_US.UTF-8
 #export TERM=xterm-256color
 export TERM=xterm-256color
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket" 
 export CASES="$HOME/Documents/ofc/Cases/"
+export NOTES="$HOME/Documents/notes/"
 
 unset PROMPT_COMMAND
 
