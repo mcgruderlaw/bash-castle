@@ -11,7 +11,7 @@
 #export IFS=$' \t\n'
 export EDITOR="vim"
 export MANWIDTH=80
-export BROWSER="firefox"
+export BROWSER="qutebrowser"
 export BROWSERCLI="w3m"
 export PLAYER="mpv"
 export IMAGEVIEWER="feh"
