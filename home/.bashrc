@@ -9,20 +9,22 @@
 #if [[ \$TMUX ]]; then source ~/.tmux-git/tmux-git.sh; fi
 
 #export IFS=$' \t\n'
-export EDITOR="vim"
+export EDITOR="vim --servername VIMSERVER --remote-silent"
 export MANWIDTH=80
-export BROWSER="qutebrowser"
+export BROWSER="qt.sh"
 export BROWSERCLI="w3m"
 export PLAYER="mpv"
 export IMAGEVIEWER="feh"
 export HISTIGNORE="clear:history"
 export HISTCONTROL="ignoredups"
 # export PAGER=/usr/local/bin/vimpager
+export LPASS_AGENT_TIMEOUT=0
 export PAGER="less"
 export CDPATH=$CDPATH:~/Downloads:~/Dropbox:~/Documents
 export PYTHONPATH=$PYTHONPATH:~/usr/lib/python3.4/site-packages:~/usr/lib/python2.7/site-packages
 export GIT_AUTHOR_NAME="David E. McGruder"
 export GIT_COMMITTER_NAME="David E. McGruder"
+export TERMCMD="urxvt"
 PS1='[\u@\h \W]\$ '
 complete -cf sudo
 complete -cf man
