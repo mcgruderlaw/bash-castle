@@ -166,6 +166,7 @@ alias myreflector='sudo reflector -c US -a 4 -f 5 -p http -p https -p ftp --sort
 alias nethome='sudo netctl start home'
 alias network='sudo netctl start work'
 alias nb='newsbeuter -I $HOME/Documents/notes/newsbeuter_list && newsbeuter'
+alias r='ranger'
 alias rb='sudo reboot'
 alias sb='source ~/.bashrc'
 alias sd='sudo shutdown -P -h now'
