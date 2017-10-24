@@ -202,6 +202,7 @@ alias xch='xclip -selection primary -o'
 alias xr='xcompmgrrestart.sh'
 alias z='z.sh'
 alias mountm='sudo sshfs dmc@23.124.50.217:/data/Media/Music /media/Music/ -p 39966'
+alias mountS='sudo mount -t cifs //192.168.1.102/Scans /mnt/Scans/ -o username=dmc,password=jowcol'
 
 # Equery aliases
 alias eqf='equery f'
