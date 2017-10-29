@@ -110,6 +110,11 @@ mkcd () {
   cd "$1"
 }
 
+# make backup file
+bak() {
+  \cp "$1" "$1.`date -I'seconds'`"
+}
+
 # git commit
 gitc() {
   git commit -m "$1"
