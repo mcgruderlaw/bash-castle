@@ -156,6 +156,10 @@ tra() {
 }
 
 
+tri() {
+		transmission-remote -t$1 -i
+}
+
 trs() {
 		transmission-remote -t$1 -s
 }
