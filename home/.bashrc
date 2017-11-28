@@ -90,13 +90,13 @@ shopt -s autocd
 # Functions 
 
 #Automatically enter ssh passphrase; SSH Keys Arch Wiki
-#if ! pgrep -u $USER ssh-agent > /dev/null; then
-#    ssh-agent > ~/.ssh-agent-thing
-#fi
-#if [[ "$SSH_AGENT_PID" == "" ]]; then
-#    eval $(<~/.ssh-agent-thing)
-#fi
-#ssh-add -l >/dev/null || alias ssh='ssh-add -l >/dev/null || ssh-add && unalias ssh; ssh'
+if ! pgrep -u $USER ssh-agent > /dev/null; then
+    ssh-agent > ~/.ssh-agent-thing
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+    eval $(<~/.ssh-agent-thing)
+fi
+ssh-add -l >/dev/null || alias ssh='ssh-add -l >/dev/null || ssh-add && unalias ssh; ssh'
 #
 #today1() {
 #        echo -n "Today's date is: "
