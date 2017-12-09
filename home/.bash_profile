@@ -5,7 +5,7 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 
-PATH=$PATH:/usr/sbin:~/.cabal:~/.cabal/bin:~/.vim:~/.w3m:~/bin:~/local:~/local/bin
+PATH=$PATH:/usr/sbin:~/.vim:~/.w3m
 
 export PATH
 export PATH="${PATH}:$HOME/.bin"
