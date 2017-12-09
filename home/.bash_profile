@@ -13,8 +13,8 @@ export LANG=en_US.UTF-8
 #export TERM=xterm-256color
 export TERM=xterm-256color
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket" 
-export CASES="$HOME/Documents/ofc/Cases/"
-export NOTES="$HOME/Documents/notes/"
+export CASES="$HOME/ofc/Cases/"
+export NOTES="$HOME/notes/"
 
 unset PROMPT_COMMAND
 
