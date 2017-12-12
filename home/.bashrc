@@ -10,6 +10,7 @@
 
 #export IFS=$' \t\n'
 export EDITOR="vim --servername VIMSERVER --remote-silent"
+export VISUAL=vim
 export MANWIDTH=80
 export BROWSER="qt.sh"
 export BROWSERCLI="w3m"
@@ -21,6 +22,8 @@ export HISTCONTROL="ignoredups"
 export LPASS_AGENT_TIMEOUT=0
 export PAGER="less"
 export CDPATH=$CDPATH:~/Downloads:~/Dropbox:~/Documents
+export CASES="$HOME/ofc/Cases/"
+export NOTES="$HOME/notes/"
 export PYTHONPATH=$PYTHONPATH:~/usr/lib/python3.4/site-packages:~/usr/lib/python2.7/site-packages
 export GIT_AUTHOR_NAME="David E. McGruder"
 export GIT_COMMITTER_NAME="David E. McGruder"
@@ -88,6 +91,10 @@ shopt -s autocd
     # -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\""
 
 # Functions 
+
+#Originally in bash_profile
+keychain ~/.ssh/id_rsa
+. ~/.keychain/$HOSTNAME-sh
 
 #Automatically enter ssh passphrase; SSH Keys Arch Wiki
 if ! pgrep -u $USER ssh-agent > /dev/null; then

@@ -13,8 +13,6 @@ export LANG=en_US.UTF-8
 #export TERM=xterm-256color
 export TERM=rxvt-256color
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket" 
-export CASES="$HOME/ofc/Cases/"
-export NOTES="$HOME/notes/"
 
 unset PROMPT_COMMAND
 
@@ -24,8 +22,8 @@ mkcd () {
   cd "$1"
 }
 
-keychain ~/.ssh/id_rsa
-. ~/.keychain/$HOSTNAME-sh
+#keychain ~/.ssh/id_rsa
+#. ~/.keychain/$HOSTNAME-sh
 #. ~/.keychain/$HOSTNAME-sh-gpg
 
 # [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec ssh-agent startx
