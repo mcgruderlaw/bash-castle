@@ -10,7 +10,7 @@
 
 #export IFS=$' \t\n'
 export EDITOR="vim --servername VIMSERVER --remote-silent"
-export VISUAL=vim
+export VISUAL="vim --servername VIMSERVER --remote-silent"
 export MANWIDTH=80
 export BROWSER="qt.sh"
 export BROWSERCLI="w3m"
