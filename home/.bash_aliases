@@ -135,6 +135,7 @@ alias backup='sudo rsync -aAXv --progress --delete-before --exclude={"/dev/*","/
 alias Case='mux Case'
 alias cases='cd ~/Documents/ofc/Cases'
 alias c='clear'
+alias cdr='cd $(git rev-parse --show-toplevel)'
 alias cp='rsync --archive --human-readable --progress --verbose --whole-file'
 alias clivid='sudo mplayer -vo fbpau -vc ffwmv3fbpau -fs -vf scale=800:-3'
 alias dir='ls --color=auto'
