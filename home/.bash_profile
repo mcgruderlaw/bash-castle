@@ -9,6 +9,8 @@ PATH=$PATH:/usr/sbin:~/.vim:~/.w3m
 
 export PATH
 export PATH="${PATH}:$HOME/.bin"
+export PATH="${PATH}:/usr/share/surfraw"
+export PATH="${PATH}:$HOME/.config/surfraw/elvi"
 export LANG=en_US.UTF-8
 #export TERM=xterm-256color
 export TERM=rxvt-256color
