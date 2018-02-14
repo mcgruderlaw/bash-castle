@@ -13,7 +13,7 @@ export PATH="${PATH}:/usr/share/surfraw"
 export PATH="${PATH}:$HOME/.config/surfraw/elvi"
 export LANG=en_US.UTF-8
 #export TERM=xterm-256color
-export TERM=rxvt-256color
+#export TERM=rxvt-256color
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket" 
 
 unset PROMPT_COMMAND
