@@ -9,9 +9,10 @@
 #if [[ \$TMUX ]]; then source ~/.tmux-git/tmux-git.sh; fi
 
 #export IFS=$' \t\n'
-export EDITOR="vim --servername VIMSERVER --remote-silent"
-#export EDITOR="emacsclient"
-export VISUAL="vim --servername VIMSERVER --remote-silent"
+#export EDITOR="vim --servername VIMSERVER --remote-silent"
+export EDITOR="emacsclient"
+#export VISUAL="vim --servername VIMSERVER --remote-silent"
+export VISUAL="emacsclient"
 export MANWIDTH=80
 export BROWSER="qt.sh"
 export BROWSERCLI="w3m"
@@ -80,7 +81,7 @@ homeshick --quiet refresh
 #.  ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh
 
 # Set vim modes in bash, bind -P for available bindings
-set -o vi
+#set -o vi
 
 # change directories without cd
 shopt -s autocd
