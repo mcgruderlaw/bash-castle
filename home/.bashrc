@@ -10,9 +10,9 @@
 
 #export IFS=$' \t\n'
 #export EDITOR="vim --servername VIMSERVER --remote-silent"
-export EDITOR="emacsclient"
+export EDITOR="emacsclient -c"
 #export VISUAL="vim --servername VIMSERVER --remote-silent"
-export VISUAL="emacsclient"
+export VISUAL="emacsclient -c"
 export MANWIDTH=80
 #export BROWSER="qt.sh"
 export BROWSER="firefox"
