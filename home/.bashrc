@@ -31,6 +31,7 @@ export NOTES="$HOME/notes/"
 export GIT_AUTHOR_NAME="David E. McGruder"
 export GIT_COMMITTER_NAME="David E. McGruder"
 export TERMCMD="urxvt"
+export PKG_CONFIG_PATH="/usr/lib/pkgconfig/"
 PS1='[\u@\h \W]\$ '
 complete -cf sudo
 complete -cf man
