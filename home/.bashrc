@@ -191,6 +191,9 @@ yt2mp3() {
 		youtube-dl -c --restrict-filenames --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $@
 }
 
+w3mimg() {
+		w3m -o imgdisplay=/usr/libexec/w3m/w3mimgdisplay $1
+}
 
 tara() {
 		feh --image-bg black --scale-down ~/Downloads/tara

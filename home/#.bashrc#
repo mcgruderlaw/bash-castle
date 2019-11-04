@@ -32,7 +32,7 @@ export GIT_AUTHOR_NAME="David E. McGruder"
 export GIT_COMMITTER_NAME="David E. McGruder"
 export TERMCMD="urxvt"
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/"
-export RTV_BROWSER="~/.bin/urlportal.sh
+export RTV_BROWSER="~/.bin/urlportal.sh"
 PS1='[\u@\h \W]\$ '
 complete -cf sudo
 complete -cf man
@@ -191,6 +191,7 @@ yt2mp3() {
 		youtube-dl -c --restrict-filenames --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $@
 }
 
+w3mimg()
 
 tara() {
 		feh --image-bg black --scale-down ~/Downloads/tara
