@@ -33,7 +33,7 @@ export GIT_COMMITTER_NAME="David E. McGruder"
 export TERMCMD="urxvt"
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/"
 export RTV_BROWSER="~/.bin/urlportal.sh"
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
 complete -cf sudo
 complete -cf man
 [ -n "$XTERM_VERSION" ] # && transset-df --id "$WINDOWID" >/dev/null OR transset-df -a >/dev/null
