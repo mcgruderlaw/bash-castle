@@ -16,6 +16,8 @@ export LANG=en_US.UTF-8
 #export TERM=rxvt-256color
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export GPG_TTY=$(tty)
+#export PATH="/usr/lib/ccache/bin${PATH:+:}$PATH"
+#export CCACHE_DIR="/var/cache/ccache"
 if [[ -n "$SSH_CONNECTION" ]] ;then
     export PINENTRY_USER_DATA="USE_CURSES=1"
 fi
