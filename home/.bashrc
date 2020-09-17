@@ -10,12 +10,12 @@
 
 #export IFS=$' \t\n'
 #export EDITOR="vim --servername VIMSERVER --remote-silent"
-export EDITOR="emacsclient -c"
+export EDITOR="emacs"
 #export VISUAL="vim --servername VIMSERVER --remote-silent"
-export VISUAL="emacsclient -c"
+export VISUAL="emacs"
 export MANWIDTH=80
 #export BROWSER="qt.sh"
-export BROWSER="firefox"
+export BROWSER="waterfox"
 export BROWSERCLI="w3m"
 export PLAYER="mpv"
 export IMAGEVIEWER="feh"
@@ -30,7 +30,7 @@ export NOTES="$HOME/notes/"
 # export PYTHONPATH=$PYTHONPATH:~/usr/lib/python3.4/site-packages:~/usr/lib/python2.7/site-packages
 export GIT_AUTHOR_NAME="David E. McGruder"
 export GIT_COMMITTER_NAME="David E. McGruder"
-export TERMCMD="urxvt"
+export TERMCMD="xterm"
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/"
 export RTV_BROWSER="~/.bin/urlportal.sh"
 #PS1='[\u@\h \W]\$ '

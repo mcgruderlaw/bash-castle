@@ -92,35 +92,35 @@ Jobs="\j"
 
 # export PS1=$White$Time12h$Color_Off'$(git branch &>/dev/null;\
 
-#export PS1='$(git branch &>/dev/null;\
-#if [ $? -eq 0 ]; then \
-#  echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
-#  if [ "$?" -eq "0" ]; then \
-#    # @4 - Clean repository - nothing to commit
-#    echo "'$Green'"$(__git_ps1 "(%s)"); \
-#  else \
-#    # @5 - Changes to working tree
-#    echo "'$IRed'"$(__git_ps1 "{%s}"); \
-#  fi)'$BCyan$PathFull$Color_Off''$Red':'$Color_Off' "; \
-#else \
-#  # @2 - Prompt when not in GIT repo
-#  echo "'$Cyan$PathFull$Color_Off''$Red':'$Color_Off' "; \
-#fi)'
-
-export PS1=$Cyan$Time12h$Color_Off" <\u@\h>"'$(git branch &>/dev/null;\
+export PS1='$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
   echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
   if [ "$?" -eq "0" ]; then \
     # @4 - Clean repository - nothing to commit
-    echo "'$Green'"$(__git_ps1 " (%s)"); \
+    echo "'$Green'"$(__git_ps1 "(%s)"); \
   else \
     # @5 - Changes to working tree
-    echo "'$IRed'"$(__git_ps1 " {%s}"); \
-  fi) '$BYellow$PathShort$Color_Off''$Red':'$Color_Off' "; \
+    echo "'$IRed'"$(__git_ps1 "{%s}"); \
+  fi)'$BCyan$PathFull$Color_Off''$Red':'$Color_Off' "; \
 else \
   # @2 - Prompt when not in GIT repo
-  echo " '$Yellow$PathShort$Color_Off''$Red':'$Color_Off' "; \
+  echo "'$Cyan$PathFull$Color_Off''$Red':'$Color_Off' "; \
 fi)'
+
+#export PS1=$Cyan$Time12h$Color_Off" <\u@\h>"'$(git branch &>/dev/null;\
+#if [ $? -eq 0 ]; then \
+#  echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
+#  if [ "$?" -eq "0" ]; then \
+#    # @4 - Clean repository - nothing to commit
+#    echo "'$Green'"$(__git_ps1 " (%s)"); \
+#  else \
+#    # @5 - Changes to working tree
+#    echo "'$IRed'"$(__git_ps1 " {%s}"); \
+#  fi) '$BYellow$PathShort$Color_Off''$Red':'$Color_Off' "; \
+#else \
+#  # @2 - Prompt when not in GIT repo
+#  echo " '$Yellow$PathShort$Color_Off''$Red':'$Color_Off' "; \
+#fi)'
 
 alias startx='ssh-agent startx'
 
@@ -146,6 +146,7 @@ alias f='firefox &'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias fj='firejail --seccomp firefox'
+alias fullclean='make clean && rm -f config.h && git reset --hard origin/master'
 alias gits='git status'
 alias glog='git log --oneline --decorate --all --graph'
 alias grep='grep --color=auto'
@@ -174,15 +175,15 @@ alias mountd='sshfs dmc@192.168.2.2:/data/Media /home/dmc/Downloads/tmp/ -p 3996
 alias mountT2='sudo mount -t ntfs-3g /dev/sdc1 /media/Toshiba2'
 alias mountT='sudo mount -t ntfs-3g /dev/sdb1 /media/Toshiba'
 alias muttl='mutt -F $HOME/.muttrc.light'
-alias myreflector='sudo reflector -c US -a 4 -f 5 -p http -p https -p ftp --sort rate --save /etc/pacman.d/mirrorlist' 
+alias myreflector='sudo reflector -c US -a 4 -f 5 -p http -p https -p ftp --sort rate --save /etc/pacman.d/mirrorlist'
 alias nethome='sudo netctl start home'
 alias network='sudo netctl start work'
 # alias nb='newsbeuter -I $HOME/Documents/notes/newsbeuter_list && newsbeuter'
 alias nb='newsboat -I $HOME/Documents/notes/newsboat_list && newsboat'
 alias r='ranger'
-alias rb='sudo reboot'
+alias rb='loginctl reboot'
 alias sb='source ~/.bashrc'
-alias sd='sudo shutdown -P -h now'
+alias sd='loginctl poweroff'
 alias surfraw='sr -browser=$BROWSER'
 alias sr='surfraw -browser=$BROWSERCLI'
 alias Swedenstop='sudo systemctl stop pia@Sweden.service'
@@ -212,6 +213,7 @@ alias mountm='sudo sshfs dmc@23.124.50.217:/data/Media/Music /media/Music/ -p 39
 alias mountS='sudo mount -t cifs //192.168.1.102/Scans /mnt/Scans/ -o username=dmc,password=jowcol'
 alias ac='source venv/bin/activate'
 alias de='deactivate'
+alias ts-stream='TS_SOCKET=$TMPDIR/stream ts'
 
 # Equery aliases
 alias eqf='equery f'
