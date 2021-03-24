@@ -15,7 +15,7 @@ export EDITOR="emacs"
 export VISUAL="emacs"
 export MANWIDTH=80
 #export BROWSER="qt.sh"
-export BROWSER="waterfox"
+export BROWSER="firefox"
 export BROWSERCLI="w3m"
 export PLAYER="mpv"
 export IMAGEVIEWER="feh"
@@ -33,7 +33,9 @@ export GIT_COMMITTER_NAME="David E. McGruder"
 export TERMCMD="xterm"
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/"
 export RTV_BROWSER="~/.bin/urlportal.sh"
-#PS1='[\u@\h \W]\$ '
+GPG_TTY=$(tty)
+export GPG_TTY
+PS1='[\u@\h \W]\$ '
 complete -cf sudo
 complete -cf man
 [ -n "$XTERM_VERSION" ] # && transset-df --id "$WINDOWID" >/dev/null OR transset-df -a >/dev/null
