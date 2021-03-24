@@ -33,6 +33,10 @@ export GIT_COMMITTER_NAME="David E. McGruder"
 export TERMCMD="xterm"
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/"
 export RTV_BROWSER="~/.bin/urlportal.sh"
+
+GPG_TTY=$(tty)
+export GPG_TTY
+
 PS1='[\u@\h \W]\$ '
 complete -cf sudo
 complete -cf man
