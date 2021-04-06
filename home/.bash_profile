@@ -11,6 +11,7 @@ export PATH
 export PATH="${PATH}:$HOME/.bin:$HOME/.local/bin"
 export PATH="${PATH}:/usr/share/surfraw"
 export PATH="${PATH}:$HOME/.config/surfraw/elvi"
+export PATH="${PATH}:/var/tmp/portage/dev-util/cbindgen-0.18.0/image/usr/bin"
 export LANG=en_US.UTF-8
 #export TERM=xterm-256color
 #export TERM=rxvt-256color

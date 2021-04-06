@@ -92,25 +92,25 @@ Jobs="\j"
 
 # export PS1=$White$Time12h$Color_Off'$(git branch &>/dev/null;\
 
-#Changed to this one 3-20-21
+#Changed to this one 3-20-21; changed back 4-6 b/c didn't make tramp any better
 #export PS1='\u@\H: '
-export PS1='$ '
+#export PS1='$ '
 
-# Changed from this one 3-20-21
-#export PS1='$(git branch &>/dev/null;\
-#if [ $? -eq 0 ]; then \
-#  echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
-#  if [ "$?" -eq "0" ]; then \
-#    # @4 - Clean repository - nothing to commit
-#    echo "'$Green'"$(__git_ps1 "(%s)"); \
-#  else \
-#    # @5 - Changes to working tree
-#    echo "'$IRed'"$(__git_ps1 "{%s}"); \
-#  fi)'$BCyan$PathFull$Color_Off''$Red':'$Color_Off' "; \
-#else \
-#  # @2 - Prompt when not in GIT repo
-#  echo "'$Cyan$PathFull$Color_Off''$Red':'$Color_Off' "; \
-#fi)'
+# Changed from this one 3-20-21; changed back 4-6
+export PS1='$(git branch &>/dev/null;\
+if [ $? -eq 0 ]; then \
+  echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
+  if [ "$?" -eq "0" ]; then \
+    # @4 - Clean repository - nothing to commit
+    echo "'$Green'"$(__git_ps1 "(%s)"); \
+  else \
+    # @5 - Changes to working tree
+    echo "'$IRed'"$(__git_ps1 "{%s}"); \
+  fi)'$BCyan$PathFull$Color_Off''$Red':'$Color_Off' "; \
+else \
+  # @2 - Prompt when not in GIT repo
+  echo "'$Cyan$PathFull$Color_Off''$Red':'$Color_Off' "; \
+fi)'
 
 #export PS1=$Cyan$Time12h$Color_Off" <\u@\h>"'$(git branch &>/dev/null;\
 #if [ $? -eq 0 ]; then \
