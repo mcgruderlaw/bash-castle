@@ -33,6 +33,8 @@ export GIT_COMMITTER_NAME="David E. McGruder"
 export TERMCMD="xterm"
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/"
 export RTV_BROWSER="~/.bin/urlportal.sh"
+export MPD_HOST="localhost"
+export MPD_PORT="6610"
 GPG_TTY=$(tty)
 export GPG_TTY
 PS1='[\u@\h \W]\$ '
