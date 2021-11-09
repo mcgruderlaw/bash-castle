@@ -81,8 +81,9 @@ On_IWhite="\[\033[0;107m\]"   # White
 # Various variables you might want for your PS1 prompt instead
 Time12h="\T"
 Time12a="\@"
-PathShort="\w"
-PathFull="\W"
+Time24="\t"
+PathShort="\W"
+PathFull="\w"
 NewLine="\n"
 Jobs="\j"
 
@@ -113,7 +114,7 @@ Jobs="\j"
 #fi)'
 
 #Back to this 10-17-21
-export PS1=$Cyan$Time12h$Color_Off" <\u@\h>"'$(git branch &>/dev/null;\
+export PS1=$Cyan$Time24$Color_Off" <\u@\h>"'$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
   echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
   if [ "$?" -eq "0" ]; then \
@@ -122,10 +123,10 @@ if [ $? -eq 0 ]; then \
   else \
     # @5 - Changes to working tree
     echo "'$IRed'"$(__git_ps1 " {%s}"); \
-  fi) '$BYellow$PathShort$Color_Off''$Red':'$Color_Off' "; \
+  fi) '$Yellow$PathFull$Color_Off''$Red' \$ '$Color_Off' "; \
 else \
   # @2 - Prompt when not in GIT repo
-  echo " '$Yellow$PathShort$Color_Off''$Red':'$Color_Off' "; \
+  echo " '$Blue$PathFull$Color_Off''$Red' \$ '$Color_Off' "; \
 fi)'
 
 alias startx='ssh-agent startx'

@@ -102,7 +102,8 @@ shopt -s autocd
 # Functions 
 
 #Originally in bash_profile
-keychain ~/.ssh/id_rsa
+#keychain ~/.ssh/id_ed25519 ~/.ssh/id_ed25519_dmcserver ~/.ssh/id_ed25519_github 
+keychain id_ed25519 id_ed25519_dmcserver id_ed25519_github id_rsa
 . ~/.keychain/$HOSTNAME-sh
 
 #Automatically enter ssh passphrase; SSH Keys Arch Wiki
@@ -113,7 +114,7 @@ if [[ "$SSH_AGENT_PID" == "" ]]; then
     eval $(<~/.ssh-agent-thing)
 fi
 ssh-add -l >/dev/null || alias ssh='ssh-add -l >/dev/null || ssh-add && unalias ssh; ssh'
-#
+
 #today1() {
 #        echo -n "Today's date is: "
 #        date +"%A, %B %-d, %Y"
