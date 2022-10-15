@@ -36,6 +36,7 @@ export PKG_CONFIG_PATH="/usr/lib/pkgconfig/"
 export RTV_BROWSER="~/.bin/urlportal.sh"
 export MPD_HOST="localhost"
 export MPD_PORT="6610"
+export DMNT="$HOME/mnt/Media/media/downloads/"
 GPG_TTY=$(tty)
 export GPG_TTY
 PS1='[\u@\h \W]\$ '
