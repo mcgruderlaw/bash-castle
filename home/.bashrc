@@ -109,7 +109,16 @@ shopt -s autocd
 #Originally in bash_profile
 #keychain ~/.ssh/id_ed25519 ~/.ssh/id_ed25519_dmcserver ~/.ssh/id_ed25519_github 
 ##keychain id_ed25519 id_ed25519_dmcserver id_ed25519_github id_rsa
-eval $(keychain --eval --quiet id_ed25519 id_ed25519_dmcserver id_ed25519_media id_ed25519_seedbox id_ed25519_github id_rsa)
+###eval $(keychain --eval --quiet id_ed25519 id_ed25519_dmcserver id_ed25519_media id_ed25519_seedbox id_ed25519_github id_rsa)
+if [[ $(hostname) == "ideapad" ]]; then
+		eval $(keychain --eval --quiet id_ed25519 id_ed25519_dmcserver id_ed25519_github id_rsa)
+fi
+if [[ $(hostname) == "dmcserver" ]]; then
+		eval $(keychain --eval --quiet id_ed25519 id_ed25519_media id_ed25519_seedbox id_rsa)
+fi
+if [[ $(hostname) == "seedbox" ]]; then
+		eval $(keychain --eval --quiet id_ed25519_seedbox)
+fi
 . ~/.keychain/$HOSTNAME-sh
 
 #Automatically enter ssh passphrase; SSH Keys Arch Wiki
