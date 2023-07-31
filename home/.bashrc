@@ -111,7 +111,7 @@ shopt -s autocd
 ##keychain id_ed25519 id_ed25519_dmcserver id_ed25519_github id_rsa
 ###eval $(keychain --eval --quiet id_ed25519 id_ed25519_dmcserver id_ed25519_media id_ed25519_seedbox id_ed25519_github id_rsa)
 if [[ $(hostname) == "ideapad" ]]; then
-		eval $(keychain --eval --quiet id_ed25519 id_ed25519_dmcserver id_ed25519_github id_rsa)
+		eval $(keychain --eval --quiet id_ed25519-2 id_ed25519_dmcserver-2 id_ed25519_github-2 id_rsa)
 fi
 if [[ $(hostname) == "dmcserver" ]]; then
 		eval $(keychain --eval --quiet id_ed25519 id_ed25519_media id_ed25519_seedbox id_rsa)
