@@ -38,9 +38,9 @@ mkcd () {
 #. ~/.keychain/$HOSTNAME-sh-gpg
 
 # Ensure XDG_RUNTIME_DIR is set
-if test -z "$XDG_RUNTIME_DIR"; then
-		export XDG_RUNTIME_DIR=$(mktemp -d /tmp/$(id -u)-runtime-dir.XXX)
-fi
+#if test -z "$XDG_RUNTIME_DIR"; then
+#		export XDG_RUNTIME_DIR=$(mktemp -d /tmp/$(id -u)-runtime-dir.XXX)
+#fi
 
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec ssh-agent startx
 

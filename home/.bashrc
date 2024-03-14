@@ -13,9 +13,10 @@ export XDG_DATA_HOME=$HOME/.local/share
 
 #export IFS=$' \t\n'
 #export EDITOR="vim --servername VIMSERVER --remote-silent"
-export EDITOR="emacsclient -t"
+export EMACS_SOCKET_NAME="/tmp/emacs1000/server"
+export EDITOR="emacsclient --socket-name='/tmp/emacs1000/server' -t"
 #export VISUAL="vim --servername VIMSERVER --remote-silent"
-export VISUAL="emacsclient -c -a emacs"
+export VISUAL="emacsclient --socket-name='/tmp/emacs1000/server' -c -a emacs"
 export ALTERNATE_EDITOR=""
 export MANWIDTH=80
 #export BROWSER="qt.sh"
