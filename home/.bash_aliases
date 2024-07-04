@@ -150,6 +150,7 @@ alias dir='ls --color=auto'
 alias drop='dropbox-cli start'
 alias duck='w3c www.duckduckgo.com'
 alias e="emacsclient --socket-name='/tmp/emacs1000/server' -c"
+alias et="emacsclient --socket-name='/tmp/emacs1000/server' -t"
 alias f='firefox &'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
