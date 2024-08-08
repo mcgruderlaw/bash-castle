@@ -43,6 +43,7 @@ export MPD_PORT="6610"
 export DMNT="$HOME/mnt/Media/media/downloads/"
 GPG_TTY=$(tty)
 export GPG_TTY
+export TERM="xterm-direct"
 PS1='[\u@\h \W]\$ '
 complete -cf sudo
 complete -cf man
