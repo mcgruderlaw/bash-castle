@@ -20,7 +20,7 @@ export VISUAL="emacsclient --socket-name='/tmp/emacs1000/server' -c -a emacs"
 export ALTERNATE_EDITOR=""
 export MANWIDTH=80
 #export BROWSER="qt.sh"
-export BROWSER="firefox"
+export BROWSER="firefox-bin"
 export BROWSERCLI="w3m"
 export PLAYER="mpv"
 export IMAGEVIEWER="feh"
